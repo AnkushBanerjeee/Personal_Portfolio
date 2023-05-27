@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Ankush Banerjee</title> 
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://kit.fontawesome.com/50ad99d851.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div id="header"> 
+        <div class="containeer">
+            <nav>
+                <b>ANKUSH</b>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>  
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav> 
+            <div class="header_text">
+                <h4>Software Engineer,</h4>   
+                <h1>Hi, I'm <span> Ankush Banerjee</span><br>from Ranaghat,Nadia,West-Bengal.</h1>
+            </div> 
+
+<!--About div part-->
+        </div>
+     </div> 
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/hamba.png">
+                </div> 
+                <div class="about-col-2">
+                    <h1 class="sub_title">About Me</h1> 
+                    <p><br>I was born and raised in West Bengal,ranaghat,nadia.
+                     <br>I like to travel.I believe travelling gives you a new prespective to everything.You get to know a lot about the different cultures,the cuisines,their history,the language and all the small unique things every palce has to offer. 
+                     <br>Also i like to play football & badminton formally,cause i believe that a single game can change every prospects of our life. </p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                      </div>  
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C,Java,Python</li>
+                            <li><span>Web Devolopment</span><br>Frontend Devoloper<br>Backend Basics with Nodejs & Reactjs.</li>
+                            <li><span>Subjects</span><br>Data Structure Algorithm(DSA),<br>Operating System(OS),<br>Computer Networks,<br>DBMS, SQL,<br>OOPS.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-current</span><br>B-tech at Computer Science Engineering(CSE).</li>  
+                            <li><span>2022</span><br>Completed value added course of <br>Switching & Routing on Cisco Packet Tracer.</li>
+                            <li><span>2019</span><br>pursued training as a Domestic Data Entry Operator(DDEO) <br> from PMKVY.</li> 
+                             <li><span>2019</span><br>Higher Secondary Examinations.</li>
+                            <li><span>2016</span><br>ICSE Examination.</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+     </div>   
+ <!-- ---------------services section--------> 
+     <div id="project">
+        <div class="containeer">
+            <h1 class="sub_project">My Project</h1> 
+            <div class="project-list">  
+                <div> 
+                    <h2><u>A Dance Website</u></h2> 
+                    <p><br>Try to create a dance school website using node-js,pug,and css,if studets are interested they can contact with the dance master by seeing the timing of the class.</p> 
+                    <a href="https://saiba-dance-academy.onrender.com"><i class="fa-solid fa-link"></i></a>
+                </div> 
+                <div> 
+                    <h2><u>Calculator</u></h2> 
+                    <p><br>It's a simple HTML,CSS & js project that i had created using replit site, so that it is a easily deployed on the server.</p> 
+                    <a href='https://calculator--ankushbanerjee2.repl.co'><i class="fa-solid fa-link"></i></a>
+                </div> 
+                <div>
+                    <h2><u>Tic Tac Toe Game</u></h2> 
+                    <p><br>This is a online gaming site for us, which is also a simple website that is had try to make with the HTML,css & js. </p> 
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>  
+                
+            </div>
+        </div>
+     </div> 
+
+     <!------------- Contact Section --------------------->
+<div id="contact">
+    <div class="containeer">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-contact">Contact Me</h1> 
+                <p><i class="fa-solid fa-envelope"></i>ankushbanerjee26@gmail.com</p> 
+                <p><i class="fa-brands fa-whatsapp"></i>9609559197</p>  
+                <p><i class="fa-solid fa-phone"></i>9832112867</p>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a> 
+                </div>
+               <a href="images/myCV.pdf" class="btn btn2"><i class="fa-solid fa-download"></i>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name"required> 
+                    <input type="email" name="email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn3">Submit</button>
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div> 
+        <div class="copyright">
+            <p>Copyright 0, made by Ankush_Banerjee</p>
+        </div>
+    </div>
+</div>
+
+     <script>
+        var tablinks=document.getElementsByClassName('tab-links'); 
+        var tabcontents=document.getElementsByClassName('tab-contents'); 
+        // defining opentab function of html onclick 
+       function opentab(tabname)
+       {
+        for(tabl of tablinks)
+        {
+            tabl.classList.remove("active-link"); 
+        } 
+        for(tabc of tabcontents)
+        {
+            tabc.classList.remove("active-tab"); 
+        } 
+        event.currentTarget.classList.add("active-link"); 
+        document.getElementById(tabname).classList.add("active-tab");
+        
+       }
+
+     </script> 
+
+     <script>
+        var sidemenu=document.getElementById("sidemenu"); 
+        function openmenu()
+        {
+            sidemenu.style.right="0"; 
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";  
+        }
+     </script>
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwvYH7Stu3dsVooPzQceaCaDhypMhRNoUT8H22tRCefS8abqIVsrc5FVk8tYI1nOFiv2w/exec'
+        const form = document.forms['submit-to-google-sheet'] 
+        const msg=document.getElementById("msg"); 
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                 },5000)
+                 form.reset();
+            }) 
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
